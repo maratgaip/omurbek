@@ -1,0 +1,149 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.navigation{
+  width: 100%;
+  display: block;
+  padding:20px;
+}
+.nav-ul{
+  list-style-type: none;
+  padding:20px;
+  text-align: center;
+}
+.nav-ul>li{
+  float: left;
+  width: calc(100%/6);
+  padding:20px;
+  cursor: pointer;
+  color: gray;
+  font-size: 18px;
+}
+.nav-ul>li:hover{
+  background-color: wheat;
+}
+a{
+  text-decoration:none;
+  color: cornflowerblue;
+}
+
+/* Navigation end */
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.trades-list, .trades-info {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.trades-list-content {
+  width: 280px;
+}
+.trades-list-border {
+  width: 20px;
+  background-image: url(images/trades-list-right.jpg);
+}
+
+.trades-info-border {
+  width: 20px;
+  background-image: url(images/trades-list-left.jpg);
+}
+.trades-chat {
+  display: inline-block;
+  background-color: #f5f7fa;
+  width: -webkit-fill-available;
+}
+
+.trade-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #999;
+}
+.trade-item.active {
+  background-color: #f5f7fa;
+}
+
+.trade-item-avatar, .trade-item-content {
+  height: 100px;
+  display: inline-block;
+  padding: 16px;
+}
+.trade-item-content {
+  width: 220px;
+}
+.trade-item-avatar {
+  text-align: center;
+    font-size: 12px;
+    width: 70px;
+    padding-left: 0;
+}
+
+.trade-item-avatar img {
+  width: 40px;
+  border-radius: 60%;
+}
+
+.payment-method {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.payment-amount {
+  font-size: 13px;
+  color: #999;
+  margin-left: 20px;
+}
+
+.username {
+  color:#999;
+  margin-bottom: 5px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.status.hasMessage {
+  background-color: #55d3c3;
+}
+
+.trades-chat {
+  text-align: center;
+}
+
+.message-left, .message-right {
+  width: 40px;
+  display: inline-block;
+}
+
+.message-left img, .message-right img {
+  width: 40px;
+  border-radius: 60%;
+}
+
+.message-content {
+  display: inline-block;
+  height: 50px;
+  width: 500px;
+  background-color: #5c7394;
+  color: white;
+}
+
+.message-content.me {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,17 @@
+[
+    {"userName":"mithrandir",
+        "paymentMethod":[
+            {"amazon":"Amazon Gift Card"},
+            {"apple":"iTunes Gift Card"},
+            {"paypal":"PayPal"}
+        ],
+    "tradeStatus":false,
+    "amount":100,
+    "reputation":{
+        "negative":0,
+        "positive":0
+    },
+    "messages":[],
+    "buyer":true
+    }  
+]
